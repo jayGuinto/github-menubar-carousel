@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	* {
+		margin: 0px;
+		padding: 0px;
+	}
+		#container ul {
+			list-style: none;
+		}
+		#container ul li {
+			background-color: grey;
+			width: 150px;
+			border: 1px solid white;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			float: left;
+			color: white;
+			font-size: 20px;
+			position: relative;
+		}
+		#container ul li:hover {
+			background-color: black;
+		}
+		#container ul ul  {
+			display: none;
+		}
+		#container ul li:hover > ul {
+			display: block;
+		}
+		#container ul ul ul {
+			margin-left: 150px;
+			top: 0px;
+			position: absolute;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="container">
+		<ul>
+			<li>
+				1
+			</li>
+			<li>
+				2
+				<ul>
+					<li>2.1</li>
+					<li>2.2</li>
+					<li>2.3
+						<ul>
+							<li>2.3.1</li>
+							<li>2.3.2
+								<ul>
+									<li>2.3.2.1</li>
+									<li>2.3.2.2
+										<ul>
+											<li>2.3.2.3.1</li>
+											<li>2.3.2.3.2</li>
+											<li>2.3.2.3.3</li>
+										</ul>
+									</li>
+									<li>2.3.2.3</li>
+								</ul>
+							</li>
+							<li>2.3.3</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				3
+			</li>
+		</ul>
+	</div>
+
+</body>
+</html>
